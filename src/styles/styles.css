@@ -1,0 +1,13 @@
+@import "npm:modern-normalize/modern-normalize.css";
+@import "./inter-font/inter.css";
+@import "./material-icons/material-icons.css";
+
+html,
+body,
+#app {
+  height: 100%;
+  --border-radius: 6px;
+  --x-color: #ec4899;
+  --o-color: #0ea5e9;
+  font-family: "Inter", sans-serif;
+}

@@ -1,0 +1,62 @@
+.Start {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: #fff;
+  background-color: #4c1d95;
+
+  & main {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  & h1 {
+    transform: rotate(-10deg);
+    font-style: italic;
+    text-align: center;
+    font-size: 7em;
+  }
+}
+
+.btn {
+  composes: btn from "../styles/buttons.module.css";
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  font-size: 1.5em;
+
+  display: block;
+  width: 100%;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: 800px) {
+  .Start {
+    & main {
+      height: initial;
+      width: initial;
+      grid-template-rows: initial;
+      place-items: center;
+    }
+
+    & h1 {
+      overflow: hidden;
+      font-size: 10em;
+    }
+
+    & .btn {
+      width: initial;
+    }
+  }
+}

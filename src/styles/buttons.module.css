@@ -1,0 +1,21 @@
+.btn {
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:active {
+    filter: brightness(0.9);
+  }
+}
+
+.primaryBtn {
+  composes: btn;
+  background-color: #5b21b6;
+  color: #fff;
+
+  &:hover {
+    background-color: #4c1d95;
+  }
+}
