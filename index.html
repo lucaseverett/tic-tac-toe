@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles/styles.css?v=20230803" />
+    <link rel="stylesheet" href="styles/game.css?v=20230803" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#0c0419"
+    />
+  </head>
+  <body id="game">
+    <div id="wrapper">
+      <div id="current" class="X">
+        <div></div>
+        goes first!
+      </div>
+      <div id="board">
+        <button id="0" onclick="clickSquare(this)"><span></span></button>
+        <button id="1" onclick="clickSquare(this)"><span></span></button>
+        <button id="2" onclick="clickSquare(this)"><span></span></button>
+        <button id="3" onclick="clickSquare(this)"><span></span></button>
+        <button id="4" onclick="clickSquare(this)"><span></span></button>
+        <button id="5" onclick="clickSquare(this)"><span></span></button>
+        <button id="6" onclick="clickSquare(this)"><span></span></button>
+        <button id="7" onclick="clickSquare(this)"><span></span></button>
+        <button id="8" onclick="clickSquare(this)"><span></span></button>
+      </div>
+      <div id="controls">
+        <button onclick="newGame()" class="btn"><div>New Game</div></button
+        ><a href="about.html" class="btn" target="_blank"><div>About</div></a>
+      </div>
+    </div>
+    <script src="game.js?v=20230803"></script>
+  </body>
+</html>

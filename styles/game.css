@@ -1,0 +1,187 @@
+@media (min-width: calc(900rem/16)) {
+  :root {
+    font-size: 1.5em;
+  }
+}
+
+#game {
+  height: 100svh;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+#wrapper {
+  display: grid;
+  justify-content: center;
+  gap: var(--50px);
+}
+
+#current {
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: columns;
+  align-items: center;
+  justify-content: center;
+  gap: var(--10px);
+}
+
+#current.X div {
+  height: var(--30px);
+  width: var(--30px);
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+#current.X div:before,
+#current.X div:after {
+  position: absolute;
+  width: var(--5px);
+  content: "";
+  height: 100%;
+  background-color: #a78bfa;
+}
+
+#current.X div:before {
+  transform: rotate(45deg);
+}
+
+#current.X div:after {
+  transform: rotate(-45deg);
+}
+
+#current.O div {
+  height: var(--30px);
+  width: var(--30px);
+  border-radius: 50%;
+  border: var(--5px) solid #a78bfa;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: var(--10px);
+}
+
+#board button {
+  height: var(--100px);
+  width: var(--100px);
+  background: linear-gradient(to bottom, #ddd6fe 0%, #f5f3ff 100%);
+  border-radius: 1rem;
+  box-shadow: 0 var(--4px) 0 0 #a78bfa;
+  margin-bottom: var(--4px);
+  display: grid;
+  place-items: center;
+}
+
+#board button:focus-visible {
+  outline: var(--4px) solid #a78bfa;
+}
+
+#board button.X span {
+  height: var(--60px);
+  width: var(--60px);
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+#board button.X span:before,
+#board button.X span:after {
+  position: absolute;
+  width: var(--10px);
+  content: "";
+  height: 100%;
+  background-color: #4c1d95;
+}
+
+#board button.X span:before {
+  transform: rotate(45deg);
+}
+
+#board button.X span:after {
+  transform: rotate(-45deg);
+}
+
+#board button.O span {
+  height: var(--60px);
+  width: var(--60px);
+  border-radius: 50%;
+  border: var(--10px) solid #4c1d95;
+}
+
+#board button.highlight {
+  width: var(--96px);
+  height: var(--96px);
+  background: #5b21b6;
+  border: var(--2px) solid #6d28d9;
+  box-shadow: 0 var(--4px) 0 0 #4c1d95;
+}
+
+#board button.highlight.O span {
+  border-color: #f5f3ff;
+}
+
+#board button.highlight.X span:before,
+#board button.highlight.X span:after {
+  background-color: #f5f3ff;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--10px);
+}
+
+#controls .btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #f5f3ff;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  position: relative;
+}
+
+#controls button.btn {
+  background-color: #fb923c;
+  box-shadow: 0 var(--4px) 0 0 #c2410c;
+  border: var(--2px) solid #fdba74;
+}
+
+#controls a.btn {
+  text-decoration: none;
+  background-color: #5b21b6;
+  box-shadow: 0 var(--4px) 0 0 #4c1d95;
+  border: var(--2px) solid #6d28d9;
+}
+
+#controls .btn div {
+  text-shadow: var(--1px) var(--1px) var(--4px) rgba(0, 0, 0, 0.5);
+}
+
+#controls button.btn:active {
+  box-shadow: 0 var(--2px) 0 0 #c2410c;
+  transform: translateY(var(--2px));
+}
+
+#controls button.btn:focus-visible {
+  outline: var(--4px) solid #fdba74;
+  outline-offset: var(--2px);
+}
+
+#controls a.btn:active {
+  box-shadow: 0 var(--2px) 0 0 #4c1d95;
+  transform: translateY(var(--2px));
+}
+
+#controls a.btn:focus-visible {
+  outline: var(--4px) solid #6d28d9;
+  outline-offset: var(--2px);
+}

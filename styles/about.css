@@ -1,0 +1,43 @@
+#about {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+@media (min-width: calc(900rem/16)) {
+  #about {
+    margin: 100px;
+    padding: 60px;
+  }
+}
+
+#about a {
+  color: #000;
+}
+
+#about h1 {
+  font-size: var(--36px);
+  font-weight: bold;
+  margin-bottom: var(--20px);
+  color: #4c1d95;
+}
+
+#about h2 {
+  font-size: var(--24px);
+  font-weight: bold;
+  margin-bottom: var(--20px);
+  color: #4c1d95;
+}
+
+#about p:not(:last-of-type) {
+  margin-bottom: var(--20px);
+}
+
+#about ul {
+  list-style: disc;
+  margin-left: var(--20px);
+  margin-bottom: var(--20px);
+}
+
+#about li {
+  margin-bottom: var(--10px);
+}

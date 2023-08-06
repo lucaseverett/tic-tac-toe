@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+html,
+body {
+  min-height: 100%;
+  line-height: 1.5;
+  background: radial-gradient(circle, #2e1065 0%, #0c0419 96%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+}
+
+:root {
+  --1px: calc(1rem / 16);
+  --2px: calc(2rem / 16);
+  --4px: calc(4rem / 16);
+  --5px: calc(5rem / 16);
+  --10px: calc(10rem / 16);
+  --20px: calc(20rem / 16);
+  --30px: calc(30rem / 16);
+  --36px: calc(36rem / 16);
+  --50px: calc(50rem / 16);
+  --60px: calc(60rem / 16);
+  --96px: calc(96rem / 16);
+  --100px: calc(100rem / 16);
+}
